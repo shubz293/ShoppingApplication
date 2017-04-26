@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/interfaceColor"
+        android:orientation="vertical"
+        android:padding="@dimen/button_padding"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/shopping_cart"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/interfaceColor"
+        android:paddingEnd="@dimen/layout_padding"
+        android:paddingStart="@dimen/layout_padding"
+        android:foregroundGravity="bottom">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/layout_padding"
+        android:text="Total"
+        android:textSize="@dimen/button_text_size" />
+
+        <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/layout_padding"
+        android:text="Price"
+        android:textSize="@dimen/button_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_padding"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cart_item_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_place_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:padding="@dimen/button_padding"
+        android:layout_margin="@dimen/layout_padding"
+        android:layout_gravity="center_horizontal"
+        android:text="Place Order"
+        />
+
+</LinearLayout>

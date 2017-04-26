@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/interfaceColor">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/placed_item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_padding"
+        android:padding="@dimen/layout_padding"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/recycler_view_background"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@id/placed_item_recycler_view"
+        android:padding="@dimen/layout_padding"
+        android:background="@color/interfaceColor"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--name-->
+            <TextView
+            android:id="@+id/textPlaceOrderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name"
+            android:textSize="@dimen/normal_text_size"
+            android:padding="@dimen/layout_padding"
+            />
+
+            <!--address-->
+            <EditText
+            android:id="@+id/editTextPlaceOrderAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Address"
+            android:textSize="@dimen/normal_text_size"
+            />
+
+            <!--button layout-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/interfaceColor"
+                android:id="@+id/relativeLayoutButton"
+                >
+
+                <Button
+                    android:id="@+id/placeOrderBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:background="@color/transparent"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/layout_padding"
+                    android:textColor="@color/colorAccent"/>
+
+                <Button
+                    android:id="@+id/placeOrderPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place_order"
+                    android:background="@color/transparent"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/layout_padding"
+                    android:textColor="@color/colorAccent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

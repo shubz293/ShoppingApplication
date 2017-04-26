@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.majorproject.groceryshopping.shoppingapplication.SelectLoginSignupActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:background="@color/interfaceColor"
+    android:padding="16sp"
+
+>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+
+    >
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button1"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/login"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:paddingTop="10sp"
+
+        />
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:background="@drawable/button2"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/colorAccent"
+            android:paddingBottom="10sp"
+
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+        android:padding="10dp"
+    >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/shopping_cart"
+            android:contentDescription="Image"
+        />
+
+
+    </LinearLayout>
+
+</LinearLayout>

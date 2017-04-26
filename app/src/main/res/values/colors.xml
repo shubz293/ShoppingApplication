@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="main_store_header_end">@color/interfaceColor</color>
+    <color name="main_store_header_center">#03a9f4</color>
+    <color name="main_store_header_start">#03a9f4</color>
+
+    <color name="interfaceColor">#03a9f4</color> //color for the interface
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00123456</color>
+    <color name="transparent_dark" >#8d000000</color>
+    <color name="transparent_lite">#7dededed</color>
+
+
+    <color name="colorPrimary">@color/interfaceColor</color>
+    <color name="colorPrimaryDark">@color/interfaceColor</color>
+    <color name="navBarColor">@color/interfaceColor</color>
+    <color name="colorAccent">@color/white</color>
+
+    <color name="button">#FCCF27</color>
+
+    <color name="bestProduct"   >@color/interfaceColor</color>  /**#f793000**/
+    <color name="freeDelivery"  >@color/interfaceColor</color> /**#9e9e9e**/
+    <color name="premiumQuality">@color/interfaceColor</color> /**#2196f3**/
+    <color name="loginSignup"   >@color/interfaceColor</color> /**#333333**/
+
+
+
+
+    <array name="introInterfaceColor">
+        <item>@color/bestProduct</item>
+        <item>@color/freeDelivery</item>
+        <item>@color/premiumQuality</item>
+        <item>@color/loginSignup</item>
+    </array>
+
+
+    <color name="icon_app_bar_main_store" >#a5000000</color>
+
+
+    <color name="dot_inactive_color" >#8d000000</color>
+    <color name="dot_active_color">#b5ededed</color>
+
+
+
+    <color name="fragment_background">#ffffff</color>
+    <color name="button_background_color">#FCCF27</color>
+
+
+
+
+
+</resources>
